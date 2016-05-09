@@ -25,7 +25,7 @@ try:
             found = True
             splash = pygame.image.load(open(splash_img, 'rb'))
     if not found:
-        splash = pygame.image.load(open(os.path.join(cur_dir, "splash.png"), 'rb'))
+        splash = pygame.image.load(open(os.path.join(cur_dir, "splash.tif"), 'rb'))
     screen = pygame.display.set_mode(splash.get_size(), pygame.NOFRAME)
     screen.blit(splash, (0, 0))
 except IOError:
